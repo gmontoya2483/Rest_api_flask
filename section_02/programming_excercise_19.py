@@ -1,12 +1,5 @@
 
 
-## if XX [not] in
-
-#know_people = []
-# person = input("Enter the person you know: ")
-
-
-
 ## Excersice 19
 
 
