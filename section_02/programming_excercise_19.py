@@ -17,10 +17,8 @@ def who_do_you_know():
     list_persons_with_spaces = persons.split(",")
     
     # remove the spaces
-    list_persons_without_spaces = []
-    for person in list_persons_with_spaces:
-        list_persons_without_spaces.append(person.strip())
-
+    list_persons_without_spaces = [person.strip() for person in list_persons_with_spaces]
+    
     # Return that list
     return list_persons_without_spaces
 
