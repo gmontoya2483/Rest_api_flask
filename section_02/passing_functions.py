@@ -22,7 +22,7 @@ def not_thirteen(x):
     return x != 13
 print(list(filter(not_thirteen,my_list)))
 
-## translate lambda to list comprehansion
+## translate lambda to list comprehension
 print ([x for x in my_list if x != 13])
 
 
