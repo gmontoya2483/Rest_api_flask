@@ -5,6 +5,8 @@ my_variable = 56
 string_variable = "hello"
 string_quotes = 'string can have single quotes'
 
+boolena = True
+
 # print (my_variable)
 # print (string_variable)
 # print ("Hello world!")
