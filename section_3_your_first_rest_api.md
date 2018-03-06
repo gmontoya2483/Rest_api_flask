@@ -114,3 +114,39 @@ Para ejecutar ```python app.py```
 
 [Video: Creando los endpoints en Flask](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960116?start=0)
 
+## Implementar un GET simple sin argumentos
+
+Primero se debe importar el metodo ```jsonify``` del paquete flask
+
+```python
+    from flask import Flask, jsonify
+```
+
+```python
+    # GET /store
+    @app.route('/store', methods=['GET'])
+    def get_stores ():
+        return jsonify({'stores':stores})
+```
+
+> ```jsonify``` toma como argumento un diccionario
+
+despues de llamar ```http://127.0.0.1:5000/store``` en un web browser obtenemos el siguiente resultado:  
+
+```json
+    {
+        "stores": [
+            {
+            "items": [
+                {
+                "name": "My Item", 
+                "price": 15.99
+                }
+            ], 
+            "name": "My Onderful Store"
+            }
+        ]
+    }
+```
+
+[Video: Recibir una lista de stores ](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960118?start=0)

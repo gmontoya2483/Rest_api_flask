@@ -20,3 +20,5 @@
 
 * Instalación de Flask
 * First Flask application, structure and how to run it
+* Creando los Endpoits
+* Implementar un GET simple sin argumentos
