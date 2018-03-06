@@ -18,4 +18,5 @@
 
 ## [Section 3: Your first Rest API](section_3_your_first_rest_api.md)
 
-* Instalacion de Flask
+* Instalación de Flask
+* First Flask application, structure and how to run it

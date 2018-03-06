@@ -1,6 +1,6 @@
 # Section 3: Your first REST API
 
-## Instalacion de Flask
+## Instalación de Flask
 
 Ejecutar el siguiente comando: ```pip install flask``` ó ```pip3 install flask```, si se tienen en la computadora las 2 versiones de python.
 
@@ -36,7 +36,7 @@ Este comando va a instalar las siguientes librerias:
 
 [Video: Explicacion sobre instalación de Flask](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960108?start=0)
 
-## Flask app structure and how to run it
+## First Flask application, structure and how to run it
 
 ```python
     from flask import Flask
@@ -60,3 +60,57 @@ Para ejecutar ```python app.py```
 ```
 
 [Video: Primera applicacion Flask](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960110?start=0)
+
+## Creando los Endpoits
+
+```python
+    from flask import Flask
+
+    app = Flask(__name__)
+
+    stores = [
+        {
+            'name':'My Onderful Store',
+            'items': [
+                {
+                    'name': 'My Item',
+                    'price': 15.99
+                }
+            ]
+        }
+    ]
+
+    # POST - used to receive data
+    # GET - used to send data back only
+
+    # POST /store data: {name:}
+    @app.route('/store', methods=['POST'])
+    def create_store():
+        pass
+
+    # GET /store/<string:name>
+    @app.route('store/<string:name>', methods=['GET'])
+    def get_store (name):
+        pass
+
+    # GET /store
+    @app.route('store', methods=['GET'])
+    def get_stores ():
+        pass
+
+    # POST /store/<string:name>/item {name:, price:}
+    @app.route('/store/<string:name>/item', methods=['POST'])
+    def create_item_in_store(name):
+        pass
+
+    # GET /store/<string:name>/item
+    @app.route('store/<string:name>/item', methods=['GET'])
+    def get_item_in_store (name):
+        pass
+
+
+    app.run(port=5000)
+```
+
+[Video: Creando los endpoints en Flask](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960116?start=0)
+
