@@ -30,7 +30,9 @@
 
 ## [Flask-RESTful for more effective develpment](section_4_flask_restful.md)
 
+* Crear un entorno virtual
+* Instalar la libreria Flask-Restful
 
-## References
+## Referencias
 
 [Cuarso Uadamy - REST APIs with Flask and Python](https://www.udemy.com/rest-api-flask-and-python/learn/v4/content)
