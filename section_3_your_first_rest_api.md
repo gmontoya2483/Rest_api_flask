@@ -150,3 +150,120 @@ despues de llamar ```http://127.0.0.1:5000/store``` en un web browser obtenemos 
 ```
 
 [Video: Recibir una lista de stores ](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960118?start=0)
+
+
+## Implementar el resto de los endpoints
+
+### implementar un simple POST
+
+Primero se debe importar el metodo ```request``` del paquete flask
+
+```python
+    from flask import Flask, jsonify, request
+```
+
+```python
+    # POST /store data: {name:}
+    @app.route('/store', methods=['POST'])
+    def create_store():
+        request_data = request.get_json()
+        new_store = {
+            'name': request_data['name'],
+            'items': []
+        }
+        stores.append(new_store)
+        return jsonify(new_store)
+```
+
+
+
+### implementar un GET de un store específico
+
+```python
+    # GET /store/<string:name>
+    @app.route('/store/<string:name>', methods=['GET'])
+    def get_store (name):
+        for store in stores:
+            if store['name'] == name:
+                return jsonify(store)
+
+        return jsonify ({'message':'store not found'})
+```
+
+Despues de llamar ```http://127.0.0.1:5000/store/nombre inexistente``` en un web browser obtenemos el siguiente resultado:
+
+```json
+    {
+        "message": "store not found"
+    }
+```
+
+Despues de llamar ```http://127.0.0.1:5000/store/My%20Onderful%20Store``` en un web browser obtenemos el siguiente resultado:
+
+```json
+    {
+    "items": [
+        {
+        "name": "My Item", 
+        "price": 15.99
+        }
+    ],
+    "name": "My Onderful Store"
+    }
+```
+
+### implementar un GET para obtener todos los items de un store
+
+```python
+    # GET /store/<string:name>/item
+    @app.route('/store/<string:name>/item', methods=['GET'])
+    def get_item_in_store (name):
+        for store in stores:
+            if store['name'] == name:
+                return jsonify({'items':store['items']})
+
+        return jsonify ({'message':'store not found'})
+```
+
+Despues de llamar ```http://127.0.0.1:5000/store/nombre inexistente/item``` en un web browser obtenemos el siguiente resultado:
+
+```json
+    {
+        "message": "store not found"
+    }
+```
+
+Despues de llamar ```http://127.0.0.1:5000/store/My%20Onderful%20Store/item``` en un web browser obtenemos el siguiente resultado:
+
+```json
+    {
+    "items": [
+        {
+        "name": "My Item", 
+        "price": 15.99
+        }
+    ]
+    }
+```
+
+### implementar un POST para agregar items a un store
+
+```python
+    # POST /store/<string:name>/item {name:, price:}
+    @app.route('/store/<string:name>/item', methods=['POST'])
+    def create_item_in_store(name):
+        request_data = request.get_json()
+        new_item = {
+            'name': request_data['name'],
+            'price': request_data['price']
+        }
+
+        for store in stores:
+            if store['name'] == name:
+                store['items'].append(new_item)
+                return jsonify(new_item)
+
+        return jsonify ({'message':'store not found'})
+```
+
+[Video: Implementar el resto de los endpoints ](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960120?start=0)

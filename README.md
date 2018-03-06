@@ -22,3 +22,8 @@
 * First Flask application, structure and how to run it
 * Creando los Endpoits
 * Implementar un GET simple sin argumentos
+* Implementar el resto de los endpoints
+    * implementar un simple POST
+    * implementar un GET de un store específico
+    * implementar un GET para obtener todos los items de un store
+    * implementar un POST para agregar items a un store
