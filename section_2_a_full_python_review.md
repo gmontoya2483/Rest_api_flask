@@ -197,7 +197,7 @@ usando funciones normales
     print(list(filter(not_thirteen,my_list)))
 ```
 
-usando list comprenension
+usando list comprenhension
 
 ```python
     my_list = [13, 56, 77, 484]
