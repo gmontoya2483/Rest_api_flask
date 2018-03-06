@@ -34,4 +34,29 @@ Este comando va a instalar las siguientes librerias:
     Successfully installed Jinja2-2.10 MarkupSafe-1.0 Werkzeug-0.14.1 click-6.7 flask-0.12.2 itsdangerous-0.24
 ```
 
-[Video: Explicacion sobre Mthods](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960108?start=0)
+[Video: Explicacion sobre instalación de Flask](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960108?start=0)
+
+## Flask app structure and how to run it
+
+```python
+    from flask import Flask
+
+    app = Flask(__name__)
+
+    @app.route('/')
+    def home():
+        return "Hello, world!!"
+
+    app.run(port=5000)
+```
+
+Guardar el archivo en este caso con el nombre ```app.py```
+
+Para ejecutar ```python app.py```
+
+```
+    C:\Users\montoya\Desktop\CursoRestAPIFlask\section_03_your_first_rest_api>python app.py
+    * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
+[Video: Primera applicacion Flask](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960110?start=0)

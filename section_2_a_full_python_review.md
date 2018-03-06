@@ -33,7 +33,7 @@
     my_print_method (result)
 ```
 
-[Video: Explicacion sobre Mthods](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960060?start=0)
+[Video: Explicacion sobre Methods](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960060?start=0)
 
 ## List, Tuples and sets
 
