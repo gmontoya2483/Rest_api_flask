@@ -28,7 +28,7 @@ Un entorno virtual nos da una instalacion limpia de Python. Esto nos permite hac
 
 3. Activar el entorno virtual ejecutando el siguiente comando:  
 
-    ```./venv/Scripts/activate.bat```
+    ```.\venv\Scripts\activate.bat```
 
     > Estas instrucciones son validas solo para Windows10, para otros entornos Mac, Linux ver las referencias en el video.
 
@@ -49,6 +49,42 @@ Para instalar esta libreria ejecutar el comando ```pip install Flask-RESTful```.
     virtualenv==15.1.0
     Werkzeug==0.14.1
 ```
+
 >Nota: Si estamos dentro del entorno virtual la libreria va a ser cargada solo para el entorno virtual. Por otro lado si estamos fuera del entorno virtual esta libreria no va a ser accesible por el mismo.
 
 [Video: Virtualenvs and setting up Flask-RESTful](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960148?start=0)
+
+## Primera aplicacion Flask-RESTful
+
+> Crear la carpeta donde se va a alojar el código desde la consola estando dentro del entorno virtual. Crear dentro de esta carpeta el archivo ```app.py```.
+
+Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. Además importar la clase ```Flask``` del modulo ```flask```
+
+```python
+    from flask import Flask
+    from flask_restful import Resource, Api
+```
+
+* RESTful api basica con un recurso y meodo ```GET```:  
+
+```python
+    from flask import Flask
+    from flask_restful import Resource, Api
+
+    app = Flask (__name__)
+    api = Api(app)
+
+    class Student(Resource):
+        def get (self, name):
+            return {'student':name}
+
+    api.add_resource(Student, '/student/<string:name>')
+
+    app.run(port=5000)
+```
+
+* Ejecutar el archivo ```app.py``` desde el entorno virtual:  
+
+    ```python app.py```
+
+[Video: primera aplicacion Flask-RESTful](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960152?start=0)
