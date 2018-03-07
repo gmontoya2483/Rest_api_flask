@@ -35,6 +35,7 @@
 * Primera aplicacion Flask-RESTful
 * Crear el recurso Item
 * Crear el recurso para Items
+* Authentication and Logging in
 
 ## Referencias
 
