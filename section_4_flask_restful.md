@@ -269,3 +269,11 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
 
 [Video: Authentication and loggin in - Parte 1](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960168?start=0)  
 [Video: Authentication and loggin in - Parte 2](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960170?start=0)
+
+## Metodo para borrar un recurso Item
+
+```python
+    def delete(self, name):
+    global items
+    items = list(filter(lambda item: item['name'] != name, items))
+```

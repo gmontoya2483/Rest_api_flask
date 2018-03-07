@@ -36,6 +36,7 @@
 * Crear el recurso Item
 * Crear el recurso para Items
 * Authentication and Logging in
+* Metodo para borrar un recurso Item
 
 ## Referencias
 
