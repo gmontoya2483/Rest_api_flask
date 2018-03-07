@@ -277,3 +277,22 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
     global items
     items = list(filter(lambda item: item['name'] != name, items))
 ```
+[Video: Crear un metodo PUT](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960174?start=0)
+
+## Metodo PUT para modificar o insertar un recurso Item
+
+```python
+    def put (self, name):
+        data = request.get_json()
+        item = next(filter(lambda item: item['name'] == name, items), None)
+
+        if item is None:
+            item = {'name': name, 'price': data['price']}
+            items.append(item)
+        else:
+            item.update(data)
+        return item
+```
+
+[Video: Crear un metodo PUT](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960178?start=0)
+

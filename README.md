@@ -37,6 +37,7 @@
 * Crear el recurso para Items
 * Authentication and Logging in
 * Metodo para borrar un recurso Item
+* Metodo PUT para modificar o insertar un recurso Item
 
 ## Referencias
 
