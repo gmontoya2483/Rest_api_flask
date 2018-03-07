@@ -95,16 +95,17 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
     items = []
 
     class Item(Resource):
-        def get (self, name):
-            for item in items:
-                if item['name'] == name:
-                    return item
-            return {'item': None}, 404
+    def get (self, name):
+        for item in items:
+            if item['name'] == name:
+                return item
+        return {'item': None}, 404
 
-        def post(self, name):
-            item = {'name': name, 'price': 12.00}
-            items.append(item)
-            return item, 201
+    def post(self, name):
+        data = request.get_json()
+        item = {'name': name, 'price': data['price']}
+        items.append(item)
+        return item, 201
 
     api.add_resource(Item, '/item/<string:name>')
 ```
@@ -116,3 +117,15 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
 > 404 NOT FOUND  
 
 [Video: Crear el recurso Item](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960156?start=0)
+
+## Crear el recurso para Items
+
+```python
+    class ItemList(Resource):
+    def get (self):
+        return {'items': items}
+
+    api.add_resource(ItemList, '/items')
+```
+
+[Video: Crear el recurso Items](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960160?start=0)

@@ -34,6 +34,7 @@
 * Instalar la libreria Flask-Restful
 * Primera aplicacion Flask-RESTful
 * Crear el recurso Item
+* Crear el recurso para Items
 
 ## Referencias
 
