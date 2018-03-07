@@ -129,3 +129,34 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
 ```
 
 [Video: Crear el recurso Items](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960160?start=0)
+
+## Mejoras en el Recurso Item
+
+```python
+    class Item(Resource):
+        def get (self, name):
+            item = next(filter(lambda item: item['name'] == name, items), None)
+            return {'item': item}, 200 if item is not None else 404
+
+        def post(self, name):
+            if next(filter(lambda item: item['name'] == name, items), None) is not None:
+                return {'message': "An item with name '{}' already exist".format(name)}, 400
+
+            data = request.get_json()
+            item = {'name': name, 'price': data['price']}
+            items.append(item)
+            return item, 201
+
+    api.add_resource(Item, '/item/<string:name>')
+```
+
+> Con esta mejora se reemplaza el loop para buscar el item con un filtro, además antes de insertar el nuevo item se verifica que no exista.
+
+> **html codes:**  
+> 200 OK  
+> 201 CREATED  
+> 202 ACCEPTED  
+> 404 NOT FOUND 
+> 400 BAD REQUEST  
+
+[Video: Mejora de codigo y control de errores](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960162?start=0)
