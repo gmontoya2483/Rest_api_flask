@@ -88,3 +88,31 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
     ```python app.py```
 
 [Video: primera aplicacion Flask-RESTful](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960152?start=0)
+
+## Crear el recurso Item
+
+```python
+    items = []
+
+    class Item(Resource):
+        def get (self, name):
+            for item in items:
+                if item['name'] == name:
+                    return item
+            return {'item': None}, 404
+
+        def post(self, name):
+            item = {'name': name, 'price': 12.00}
+            items.append(item)
+            return item, 201
+
+    api.add_resource(Item, '/item/<string:name>')
+```
+
+> **html codes:**  
+> 200 OK  
+> 201 CREATED  
+> 202 ACCEPTED  
+> 404 NOT FOUND  
+
+[Video: Crear el recurso Item](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960156?start=0)

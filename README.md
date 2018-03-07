@@ -32,6 +32,8 @@
 
 * Crear un entorno virtual
 * Instalar la libreria Flask-Restful
+* Primera aplicacion Flask-RESTful
+* Crear el recurso Item
 
 ## Referencias
 
