@@ -28,7 +28,7 @@
     * implementar un GET para obtener todos los items de un store
     * implementar un POST para agregar items a un store
 
-## [Flask-RESTful for more effective develpment](section_4_flask_restful.md)
+## [Section 4: Flask-RESTful for more effective development](section_4_flask_restful.md)
 
 * Crear un entorno virtual
 * Instalar la libreria Flask-Restful
