@@ -1,5 +1,18 @@
 # Flask-RESTful
 
+## Índice
+
+* [Crear un entorno virtual](#crear-un-entorno-virtual)
+* [Instalar la libreria Flask-Restful](#instalar-la-libreria-flask-restful)
+* [Primera aplicacion Flask-RESTful](#primera-aplicacion-flask-restful)
+* [Crear el recurso Item](#crear-el-recurso-item)
+* [Crear el recurso para Items](#crear-el-recurso-para-items)
+* [Authentication and Logging in](#authentication-and-logging-in)
+* [Metodo para borrar un recurso Item](#metodo-para-borrar-un-recurso-item)
+* [Metodo PUT para modificar o insertar un recurso Item](#metodo-put-para-modificar-o-insertar-un-recurso-item)
+* [Request parsing](#request-parsing)
+* [Optimizando el Código](#optimizando-el-código)
+
 ## Crear un entorno virtual
 
 Un entorno virtual nos da una instalacion limpia de Python. Esto nos permite hacer que los proyectos no compartan librerias. Podemos tener dos o mas proyectos corriendo la misma libreria pero diferentes versiones.
@@ -240,7 +253,7 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
 
         ```python
             @jwt_required()
-            def get (self, name):              
+            def get (self, name):
                 item = next(filter(lambda item: item['name'] == name, items), None)
                 return {'item': item}, 200 if item is not None else 404
         ```
@@ -269,6 +282,8 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
 
 [Video: Authentication and loggin in - Parte 1](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960168?start=0)  
 [Video: Authentication and loggin in - Parte 2](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960170?start=0)
+[Flask-JWT Documentation](https://pythonhosted.org/Flask-JWT/)
+
 
 ## Metodo para borrar un recurso Item
 
@@ -338,3 +353,55 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
     > ```  
 
     [Video: Parse the request](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960180?start=0)
+
+## Optimizando el Código
+
+* Agregar el parser como variable de clase a fin que pueda afectar a todos los métodos del recurso que sea necesario:
+
+```python
+    class Item(Resource):
+
+        parser = reqparse.RequestParser()
+        parser.add_argument('price',
+                type = float,
+                required = True,
+                help = "This field cannot be left blank!!"
+        )
+
+        @jwt_required()
+        def get (self, name):
+            item = next(filter(lambda item: item['name'] == name, items), None)
+            return {'item': item}, 200 if item is not None else 404
+
+        def post(self, name):
+            if next(filter(lambda item: item['name'] == name, items), None) is not None:
+                return {'message': "An item with name '{}' already exist".format(name)}, 400
+
+            data = Item.parser.parse_args()
+
+            item = {'name': name, 'price': data['price']}
+            items.append(item)
+            return item, 201
+
+        def delete(self, name):
+            global items
+            items = list(filter(lambda item: item['name'] != name, items))
+            return {'message': 'Item deleted'}
+
+        def put (self, name):
+
+            data = Item.parser.parse_args()
+
+            item = next(filter(lambda item: item['name'] == name, items), None)
+
+            if item is None:
+                item = {'name': name, 'price': data['price']}
+                items.append(item)
+            else:
+                item.update(data)
+            return item
+
+    api.add_resource(Item, '/item/<string:name>')
+```
+
+[Video: Optimizando el Código](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960186?start=0)

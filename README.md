@@ -39,6 +39,13 @@
 * Metodo para borrar un recurso Item
 * Metodo PUT para modificar o insertar un recurso Item
 * Request parsing
+* Optimizando el Código
+
+## TODO:
+
+- [ ] Verificar el uso de Flask-JWT-Extended:
+    > [Flask-JWT-Extended](https://github.com/vimalloc/flask-jwt-extended)  
+    > [Documentación Online](http://flask-jwt-extended.readthedocs.io/en/latest/)
 
 ## Referencias
 
