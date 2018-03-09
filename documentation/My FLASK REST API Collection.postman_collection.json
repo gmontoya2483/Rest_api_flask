@@ -1,0 +1,286 @@
+{
+	"id": "fc772537-b716-4794-b92d-74446e276778",
+	"name": "My FLASK REST API Collection",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [],
+	"folders_order": [
+		"d84453c2-6403-487c-aaf6-26e68fa42dd7",
+		"b95c3817-d1be-4a5d-96af-354ef4c90063"
+	],
+	"folders": [
+		{
+			"id": "d84453c2-6403-487c-aaf6-26e68fa42dd7",
+			"name": "Section 3",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "fc772537-b716-4794-b92d-74446e276778",
+			"folder": null,
+			"order": [
+				"eb30855a-f283-4a29-b652-2a88914b07d3",
+				"1f7cf32b-1a2c-4eb1-93e9-abef58788106",
+				"edbc1279-2383-4704-970c-e3437654333a",
+				"7c6bcf78-f25e-43a7-a4f9-fefee09ce95c",
+				"fa30100c-36b3-4b62-9d93-4ce8bc7f875a"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "b95c3817-d1be-4a5d-96af-354ef4c90063",
+			"name": "Section 4",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "fc772537-b716-4794-b92d-74446e276778",
+			"folder": null,
+			"order": [
+				"b5f287ab-622b-4986-9b7a-9e0dfbf29214",
+				"db9fa6bc-77f1-4ada-a3c4-b780cf4ac489",
+				"dbff864a-3e67-4665-80ff-425ed3230d47",
+				"3ff2382f-d3a9-40f6-8e4f-dcb61839a5f1",
+				"2efcaa9f-7bd2-4596-b816-f8803a5bd0c1",
+				"6113f7e8-5894-403b-9486-60741baf795c"
+			],
+			"folders_order": []
+		}
+	],
+	"requests": [
+		{
+			"id": "1f7cf32b-1a2c-4eb1-93e9-abef58788106",
+			"name": "/stores",
+			"url": "http://127.0.0.1:5000/store",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "d84453c2-6403-487c-aaf6-26e68fa42dd7",
+			"rawModeData": "{\n\t\"name\":\"Another Store\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2efcaa9f-7bd2-4596-b816-f8803a5bd0c1",
+			"name": "/item/<string:name>",
+			"url": "http://127.0.0.1:5000/item/<string>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "b95c3817-d1be-4a5d-96af-354ef4c90063",
+			"rawModeData": "{\n\t\"price\": 15.99\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3ff2382f-d3a9-40f6-8e4f-dcb61839a5f1",
+			"name": "/item/<string:name>",
+			"url": "http://127.0.0.1:5000/item/<string>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "b95c3817-d1be-4a5d-96af-354ef4c90063",
+			"rawModeData": "{\n\t\"price\": 15.99\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6113f7e8-5894-403b-9486-60741baf795c",
+			"name": "/auth",
+			"url": "http://127.0.0.1:5000/auth",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "b95c3817-d1be-4a5d-96af-354ef4c90063",
+			"rawModeData": "{\n\t\"username\": \"bob\",\n\t\"password\": \"asdf\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7c6bcf78-f25e-43a7-a4f9-fefee09ce95c",
+			"name": "/stores/<string:name>/item",
+			"url": "http://127.0.0.1:5000/store/My Wonderful Store/item",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "d84453c2-6403-487c-aaf6-26e68fa42dd7",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "b5f287ab-622b-4986-9b7a-9e0dfbf29214",
+			"name": "/item/<string:name>",
+			"url": "http://127.0.0.1:5000/item/<name>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjA0MzM5MDEsImlhdCI6MTUyMDQzMzYwMSwibmJmIjoxNTIwNDMzNjAxLCJpZGVudGl0eSI6MX0.HkIVOHLiVkVq4N_MNyF_zb3WSikAi6S67SwBJysS6ec",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "b95c3817-d1be-4a5d-96af-354ef4c90063",
+			"headers": "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjA0MzM5MDEsImlhdCI6MTUyMDQzMzYwMSwibmJmIjoxNTIwNDMzNjAxLCJpZGVudGl0eSI6MX0.HkIVOHLiVkVq4N_MNyF_zb3WSikAi6S67SwBJysS6ec\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "db9fa6bc-77f1-4ada-a3c4-b780cf4ac489",
+			"name": "/item/<string:name>",
+			"url": "http://127.0.0.1:5000/item/<name>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "b95c3817-d1be-4a5d-96af-354ef4c90063",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "dbff864a-3e67-4665-80ff-425ed3230d47",
+			"name": "/items",
+			"url": "http://127.0.0.1:5000/items",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "b95c3817-d1be-4a5d-96af-354ef4c90063",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "eb30855a-f283-4a29-b652-2a88914b07d3",
+			"name": "/stores",
+			"url": "http://127.0.0.1:5000/store",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "d84453c2-6403-487c-aaf6-26e68fa42dd7",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "edbc1279-2383-4704-970c-e3437654333a",
+			"name": "/stores/<string:name>",
+			"url": "http://127.0.0.1:5000/store/My Wonderful Store",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "d84453c2-6403-487c-aaf6-26e68fa42dd7",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "fa30100c-36b3-4b62-9d93-4ce8bc7f875a",
+			"name": "/stores/<string:name>/item",
+			"url": "http://127.0.0.1:5000/store/My Wonderful Store/item",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "d84453c2-6403-487c-aaf6-26e68fa42dd7",
+			"rawModeData": "{\n\t\"name\": \"Another item\",\n\t\"price\": 14.56\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
