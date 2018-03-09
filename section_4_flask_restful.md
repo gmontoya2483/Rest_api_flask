@@ -282,8 +282,14 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
     >**Header**  
     >Key: Authorization, Value: JWT _+ Token_  
 
+>**Nota:** para modificar el tiempo de expiracion del token  
+> ```python
+>       import datetime
+>       app.config['JWT_EXPIRATION_DELTA'] = datetime.timedelta(seconds=1000)
+>```
+
 [Video: Authentication and loggin in - Parte 1](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960168?start=0)  
-[Video: Authentication and loggin in - Parte 2](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960170?start=0)
+[Video: Authentication and loggin in - Parte 2](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960170?start=0)  
 [Flask-JWT Documentation](https://pythonhosted.org/Flask-JWT/)
 
 

@@ -41,6 +41,8 @@
 * Request parsing
 * Optimizando el Código
 
+## [Storing Resources in an SQL Database](section_5_storing_resources_in_db.md)
+
 ## TODO:
 
 - [ ] Verificar el uso de Flask-JWT-Extended:
