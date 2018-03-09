@@ -43,6 +43,8 @@
 
 ## [Storing Resources in an SQL Database](section_5_storing_resources_in_db.md)
 
+* Comandos basicos de SQL
+
 ## TODO:
 
 - [ ] Verificar el uso de Flask-JWT-Extended:
