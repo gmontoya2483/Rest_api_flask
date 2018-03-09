@@ -296,3 +296,45 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
 
 [Video: Crear un metodo PUT](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960178?start=0)
 
+## Request parsing
+
+* Importar ```reqparse``` de la libreria ```flask_restful```  
+
+    ```python
+        from flask_restful import Resource, Api, reqparse
+    ```
+
+* Agregar al parse a la funcion que recibe el JSON
+
+    ```python
+        def put (self, name):
+
+            parser = reqparse.RequestParser()
+            parser.add_argument('price',
+                type = float,
+                required = True,
+                help = "This field cannot be left blank!!"
+            )
+            data = parser.parse_args()
+
+            item = next(filter(lambda item: item['name'] == name, items), None)
+
+            if item is None:
+                item = {'name': name, 'price': data['price']}
+                items.append(item)
+            else:
+                item.update(data)
+            return item
+    ```
+
+    > Si el request tiene otros atributos además del price, los va a descartar.  
+    > En caso que no se envie el argumento ```price```, se va a devolver el siguiente mensaje:  
+    > ```json
+    >{
+    >   "message": {
+    >       "price": "This field cannot be left blank!!"
+    >   }
+    >}
+    > ```  
+
+    [Video: Parse the request](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960180?start=0)
