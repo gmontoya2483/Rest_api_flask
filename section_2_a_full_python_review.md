@@ -1,5 +1,23 @@
 # Section 2: A full Python refresh
 
+[VOLVER A README.md](README.md)
+
+## Índice
+
+* [Variables](#variables)
+* [Methods](#methods)
+* [List, Tuples and sets](#list-tuples-and-sets)
+* [Loops (for and while)](#loops)
+* [if statement (if XX [not] in, elif, else)](#if-statement)
+* [List comprehension](#list-comprehension)
+* [Dictionaries](#dictionaries)
+* [Objects and Classes](#objects-and-classes)
+* [@classmethod and @staticmethods](#classmethod-and-staticmethods)
+* [Inheritance](#inheritance)
+* [*args and **kwargs](#args-and-kwargs)
+* [Passing functions as arguments](#passing-functions-as-arguments)
+* [Decorators](#decorators)
+
 ## Variables
 
 ```python

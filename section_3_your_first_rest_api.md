@@ -1,5 +1,19 @@
 # Section 3: Your first REST API
 
+[VOLVER A README.md](README.md)
+
+## Índice
+
+* [Instalación de Flask](#instalaci%C3%B3n-de-flask)
+* [First Flask application, structure and how to run it](#first-flask-application-structure-and-how-to-run-it)
+* [Creando los Endpoits](#creando-los-endpoits)
+* [Implementar un GET simple sin argumentos](#implementar-un-get-simple-sin-argumentos)
+* [Implementar el resto de los endpoints](#implementar-el-resto-de-los-endpoints)
+    * [implementar un simple POST](#implementar-un-simple-post)
+    * [implementar un GET de un store específico](#implementar-un-get-de-un-store-espec%C3%ADfico)
+    * [implementar un GET para obtener todos los items de un store](#implementar-un-get-para-obtener-todos-los-items-de-un-store)
+    * [implementar un POST para agregar items a un store](#implementar-un-post-para-agregar-items-a-un-store)
+
 ## Instalación de Flask
 
 Ejecutar el siguiente comando: ```pip install flask``` ó ```pip3 install flask```, si se tienen en la computadora las 2 versiones de python.
