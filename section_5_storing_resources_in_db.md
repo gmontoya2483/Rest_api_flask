@@ -128,6 +128,9 @@
         def post(self):
             data = UserRegister.parser.parse_args()
 
+            if User.find_by_username(data['username']):
+            return {'message': "An user with name '{}' already exist".format(data['username'])}, 400
+
             connection = sqlite3.connect('data.db')
             cursor = connection.cursor()
 
@@ -150,4 +153,5 @@
     api.add_resource(UserRegister,'/register')
 ```
 
-[Video: Signing up y escribir usuario en la base de datos](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5965498?start=0)
+[Video: Signing up y escribir usuario en la base de datos](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5965498?start=0)  
+[Video: Evitando usuarion duplicados](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5989182?start=0)
