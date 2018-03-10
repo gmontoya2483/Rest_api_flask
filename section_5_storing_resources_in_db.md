@@ -99,3 +99,55 @@
 ```
 
 [Video: Logging in](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5965500?start=0)
+
+## Signing up and escribir usuarios en la base de datos
+
+1. Crear el recurso ```UserRegister``` dentro del archivo ```user.py``` y agregarle el metodo ```post``
+
+```python
+    from flask_restful import Resource, reqparse
+```
+
+```python
+    class UserRegister(Resource):
+
+        parser = reqparse.RequestParser()
+        parser.add_argument('username',
+                type = str,
+                required = True,
+                help = "This field cannot be left blank!!"
+        )
+
+        parser.add_argument('password',
+                type = str,
+                required = True,
+                help = "This field cannot be left blank!!"
+        )
+
+
+        def post(self):
+            data = UserRegister.parser.parse_args()
+
+            connection = sqlite3.connect('data.db')
+            cursor = connection.cursor()
+
+            query = "INSERT INTO users VALUES (NULL, ?, ?)"
+            cursor.execute(query, (data['username'], data['password'],))
+
+            connection.commit()
+            connection.close()
+
+            return {"message": "User created"}, 201
+```
+
+2. Dentro de app.py importar UserRegistrer y agregar el recurso
+
+```python
+    from user import UserRegister
+```
+
+```python
+    api.add_resource(UserRegister,'/register')
+```
+
+[Video: Signing up y escribir usuario en la base de datos](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5965498?start=0)
