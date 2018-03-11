@@ -44,6 +44,9 @@
 ## [Storing Resources in an SQL Database](section_5_storing_resources_in_db.md)
 
 * Comandos basicos de SQL
+* Logging in and retrieving Users from database
+* Signing up and escribir usuarios en la base de datos
+* Obtener los items desde la base de datos
 
 ## TODO:
 

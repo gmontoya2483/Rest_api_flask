@@ -2,7 +2,10 @@
 
 ## Índice
 
-* [Comandos basicos de SQL](#comandos_basicos_de_sql) 
+* [Comandos basicos de SQL](#comandos_basicos_de_sql)
+* [Logging in and retrieving Users from database](#logging-in-and-retrieving-Users-from-database)
+* [Signing up and escribir usuarios en la base de datos](#signing-up-and-escribir-usuarios-en-la-base-de-datos)
+* [Obtener los items desde la base de datos](#obtener-los-items-desde-la-base-de-datos)
 
 ## Comandos basicos de SQL
 
@@ -155,3 +158,6 @@
 
 [Video: Signing up y escribir usuario en la base de datos](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5965498?start=0)  
 [Video: Evitando usuarion duplicados](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5989182?start=0)
+
+## Obtener los items desde la base de datos
+
