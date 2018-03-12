@@ -50,6 +50,7 @@
 * Escribir un item en la base de datos
 * Borrar un item de la base de datos
 * Refactor insert of items
+* Implementar el metodo put para modificar items
 
 ## TODO:
 

@@ -9,6 +9,7 @@
 * [Escribir un item en la base de datos](#escribir-un-item-en-la-base-de-datos)
 * [Borrar un item de la base de datos](#borrar-un-item-de-la-base-de-datos)
 * [Refactor insert of items](#refactor-insert-of-items)
+* [## Implementar el metodo put para modificar items](#implementar-el-metodo-put-para-modificar-items)
 
 ## Comandos basicos de SQL
 
@@ -271,3 +272,9 @@
 > 500 INTERNAL SERVER ERROR  
 
 [Video: refactor insert of items](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5988608?start=0)
+
+## Implementar el metodo put para modificar items
+
+
+
+[Video: implementar metodo PUT](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5988614?start=0)
