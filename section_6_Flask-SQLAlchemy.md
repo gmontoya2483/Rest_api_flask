@@ -11,6 +11,7 @@
 * [Implementar el ItemModel usando Flask-SQLAlchemy](#implementar-el-itemmodel-usando-flask-sqlalchemy)
 * [Implementar el UserModel usando Flask-SQLAlchemy](#implementar-el-usermodel-usando-flask-sqlalchemy)
 * [Mostrar todos los items](mostrar-todos-los-items)
+* [Crear la base de datos con SQLAlchemy](#crear-la-base-de-datos-con-sqlalchemy)
 
 ## Installaciones necesarias
 
@@ -509,3 +510,17 @@ class Item(Resource):
 ```
 
 [Video: Mostrar todos los items](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/6020510?start=0)
+
+
+## Crear la base de datos con SQLAlchemy
+
+* Agregar la siguiente funcion en ``app.py``
+
+```python
+    @app.before_first_request
+    def create_tables():
+        db.create_all()
+```
+
+
+[Video: Crear la base de datos con SQLAlchemy](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/6020512?start=0)

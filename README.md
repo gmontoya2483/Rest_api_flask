@@ -62,6 +62,8 @@
 * Configurando SQLAlchemy
 * Implementar el ItemModel usando Flask-SQLAlchemy
 * Implementar el UserModel usando Flask-SQLAlchemy
+* Mostrar todos los items
+* Crear la base de datos con SQLAlchemy
 
 ## TODO:
 
