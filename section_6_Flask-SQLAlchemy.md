@@ -1,11 +1,15 @@
 # Flask SQLAlchemy
 
+[VOLVER A README.md](README.md)
+
 ## Índice
 
 * [Installaciones necesarias](#installaciones-necesarias)
 * [Organizar el proyecto en packages](#organizar-el-proyecto-en-packages)
-* [## Creando los modelos y recursos de User y Item](#creando-los-modelos-y-recursos-de-User-y-Item)
-
+* [Creando los modelos y recursos de User y Item](#creando-los-modelos-y-recursos-de-User-y-Item)
+* [Configurando SQLAlchemy](configurando-sqlalchemy)
+* [Implementar el ItemModel usando Flask-SQLAlchemy](#implementar-el-itemmodel-usando-flask-sqlalchemy)
+* [Implementar el UserModel usando Flask-SQLAlchemy](#implementar-el-usermodel-usando-flask-sqlalchemy)
 
 ## Installaciones necesarias
 
@@ -269,9 +273,224 @@ class ItemList(Resource):
 
 [Video: Creando los modelos](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/6020492?start=0)
 
+## Configurando SQLAlchemy
 
-## Configurando SQLAchemy
+* Crear el archivo ``db.py``, que va a estar en cargado de hostear el objeto SQLAlchemy.
 
+    ```python
+        from flask_sqlalchemy import SQLAlchemy
 
+        db = SQLAlchemy()
+    ```
+
+* Importar el objeto SQLAlchemy dentro del ``app.py`` e inicializar la app.
+
+    ```python
+        if __name__ == '__main__':
+            from db import db
+            db.init_app(app)
+            app.run(port=5000, debug=True)
+    ```
+
+* Hacer que los Modelos extiendas de ``db.Model``, asignar el table name y el mapeo de las columnas.
+
+    ```python
+        import sqlite3
+        from db import db
+
+        class ItemModel(db.Model):
+
+            __tablename__ = 'items'
+
+            id = db.Column(db.Integer, primary_key=True)
+            name = db.Column(db.String(80))
+            price = db.Column(db.Float(precision=2))
+
+            ...
+    ```
+
+    ```python
+    import sqlite3
+    from db import db
+
+    class UserModel(db.Model):
+
+        __tablename__ = 'users'
+
+        id = db.Column(db.Integer, primary_key=True)
+        username = db.Column(db.String(80))
+        password = db.Column(db.String(80))
+
+        ...
+
+    ```
+
+* Definir las propiedades de configuracion de ``Flask-SQLALchemy``.
+
+```python
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+    app.config ['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+```
 
 [Video: configurando SQLAlchemy](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/6020504?start=0)
+
+## Implementar el ItemModel usando Flask-SQLAlchemy
+
+* Item Model
+
+```python
+import sqlite3
+from db import db
+
+class ItemModel(db.Model):
+
+    __tablename__ = 'items'
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(80))
+    price = db.Column(db.Float(precision=2))
+
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+    def json(self):
+        return {'name': self.name, 'price': self.price}
+
+    @classmethod
+    def find_by_name(cls, name):
+        return cls.query.filter_by(name=name).first()
+
+    def save_to_db(self):
+        db.session.add(self)
+        db.session.commit()
+
+    def delete_from_db(self):
+        db.session.delete(self)
+        db.session.commit()
+```
+
+* Item Resource
+
+```python
+class Item(Resource):
+
+    parser = reqparse.RequestParser()
+    parser.add_argument('price',
+            type = float,
+            required = True,
+            help = "This field cannot be left blank!!"
+    )
+
+    @jwt_required()
+    def get (self, name):
+        item = ItemModel.find_by_name(name)
+        if item:
+            return item.json()
+        return {'message': 'Item not found'}, 404
+
+    def post(self, name):
+        if ItemModel.find_by_name(name):
+            return {'message': "An item with name '{}' already exist".format(name)}, 400
+
+        data = Item.parser.parse_args()
+
+        item = ItemModel(name, data['price'])
+        try:
+            item.save_to_db()
+        except:
+            return {'message': "An error occurred inserting the item."},500
+
+        return item.json(), 201
+
+    def delete(self, name):
+        item = ItemModel.find_by_name(name)
+        if item:
+            item.delete_from_db()
+
+        return {'message': 'Item deleted'}
+
+    def put (self, name):
+        data = Item.parser.parse_args()
+        item = ItemModel.find_by_name(name)
+
+        if item is None:
+            item = ItemModel(name, data['price'])
+        else:
+            item.price = data['price']
+
+        item.save_to_db()
+        return item.json()
+```
+
+[Video: Implementar el ItemModel usando Flask-SQLAlchemy](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/6020506?start=0)
+
+## Implementar el UserModel usando Flask-SQLAlchemy
+
+* User Model
+
+    ```python
+        import sqlite3
+        from db import db
+
+        class UserModel(db.Model):
+
+            __tablename__ = 'users'
+
+            id = db.Column(db.Integer, primary_key=True)
+            username = db.Column(db.String(80))
+            password = db.Column(db.String(80))
+
+            def __init__(self, username, password):
+                self.username = username
+                self.password = password
+
+            @classmethod
+            def find_by_username(cls, username):
+                return cls.query.filter_by(username=username).first()
+
+            @classmethod
+            def find_by_id(cls, _id):
+                return cls.query.filter_by(id=_id).first()
+
+            def save_to_db(self):
+                db.session.add(self)
+                db.session.commit()
+    ```
+
+* User Resource
+
+    ```python
+        import sqlite3
+        from flask_restful import Resource, reqparse
+        from models.user import UserModel
+
+        class UserRegister(Resource):
+
+            parser = reqparse.RequestParser()
+            parser.add_argument('username',
+                    type = str,
+                    required = True,
+                    help = "This field cannot be left blank!!"
+            )
+
+            parser.add_argument('password',
+                    type = str,
+                    required = True,
+                    help = "This field cannot be left blank!!"
+            )
+
+
+            def post(self):
+                data = UserRegister.parser.parse_args()
+
+                if UserModel.find_by_username(data['username']):
+                    return {'message': "An user with name '{}' already exist".format(data['username'])}, 400
+
+                user = UserModel(data['username'], data['password'])
+                user.save_to_db()
+
+                return {"message": "User created"}, 201
+    ```
+
+[Video: implementar el UserModel](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/6020508?start=0)

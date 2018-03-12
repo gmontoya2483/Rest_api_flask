@@ -57,8 +57,11 @@
 ## [Section 6: Flask-SQLAlchemy](section_6_Flask-SQLAlchemy.md)
 
 * Installaciones necesarias
-
-
+* Organizar el proyecto en packages
+* Creando los modelos y recursos de User y Item
+* Configurando SQLAlchemy
+* Implementar el ItemModel usando Flask-SQLAlchemy
+* Implementar el UserModel usando Flask-SQLAlchemy
 
 ## TODO:
 
