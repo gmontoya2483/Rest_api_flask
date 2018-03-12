@@ -9,7 +9,8 @@
 * [Escribir un item en la base de datos](#escribir-un-item-en-la-base-de-datos)
 * [Borrar un item de la base de datos](#borrar-un-item-de-la-base-de-datos)
 * [Refactor insert of items](#refactor-insert-of-items)
-* [## Implementar el metodo put para modificar items](#implementar-el-metodo-put-para-modificar-items)
+* [Implementar el metodo put para modificar items](#implementar-el-metodo-put-para-modificar-items)
+* [Implementar el metodo GET obtner todos los items](#implementar-el-metodo-get-obtner-todos-los-items)
 
 ## Comandos basicos de SQL
 
@@ -275,6 +276,61 @@
 
 ## Implementar el metodo put para modificar items
 
+```python
+    @classmethod
+    def update_item(cls, item):
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
 
+        query = "UPDATE items SET price=? WHERE name=?"
+        cursor.execute(query,(item['price'], item['name'],))
+
+        connection.commit()
+        connection.close()
+```
+
+```python
+    def put (self, name):
+        data = Item.parser.parse_args()
+        item = Item.find_by_name(name)
+        updated_item = {'name': name, 'price': data['price']}
+
+        if item is None:
+            try:
+                Item.insert_item(updated_item)
+            except:
+                return {'message': "An error occurred inserting the item."},500
+            return updated_item, 201
+        else:
+            try:
+                Item.update_item(updated_item)
+            except:
+                return {'message': "An error occurred updating the item."},500
+            return updated_item
+```
 
 [Video: implementar metodo PUT](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5988614?start=0)
+
+## Implementar el metodo GET obtner todos los items
+
+```python
+class ItemList(Resource):
+
+    def get (self):
+        list_of_items=[]
+
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
+
+        query = "SELECT * from items"
+        result = cursor.execute(query)
+
+        for row in result:
+            item = {'name': row[0], 'price':row[1]}
+            list_of_items.append(item)
+
+        connection.close()
+        return {'items':list_of_items}
+```
+
+[Video: Obterner todos los items](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5989696?start=0)

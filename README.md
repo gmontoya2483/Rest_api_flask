@@ -51,6 +51,7 @@
 * Borrar un item de la base de datos
 * Refactor insert of items
 * Implementar el metodo put para modificar items
+* Implementar el metodo GET obtner todos los items
 
 ## TODO:
 
