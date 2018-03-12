@@ -52,6 +52,13 @@
 * Refactor insert of items
 * Implementar el metodo put para modificar items
 * Implementar el metodo GET obtner todos los items
+* Configuraciones avanzadas de Flask JWK
+
+## [Section 6: Flask-SQLAlchemy](section_6_Flask-SQLAlchemy.md)
+
+* Installaciones necesarias
+
+
 
 ## TODO:
 
