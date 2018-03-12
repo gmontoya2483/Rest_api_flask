@@ -47,6 +47,7 @@
 * Logging in and retrieving Users from database
 * Signing up and escribir usuarios en la base de datos
 * Obtener un item desde la base de datos
+* Escribir un item en la base de datos
 
 ## TODO:
 

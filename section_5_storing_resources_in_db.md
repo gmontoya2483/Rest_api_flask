@@ -6,6 +6,7 @@
 * [Logging in and retrieving Users from database](#logging-in-and-retrieving-Users-from-database)
 * [Signing up and escribir usuarios en la base de datos](#signing-up-and-escribir-usuarios-en-la-base-de-datos)
 * [Obtener un item desde la base de datos](#obtener-un-item-desde-la-base-de-datos)
+* [Escribir un item en la base de datos](#escribir-un-item-en-la-base-de-datos)
 
 ## Comandos basicos de SQL
 
@@ -180,3 +181,27 @@
 
 [Video: Obtener un item desde la base de datos](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5965486?start=0)
 
+## Escribir un item en la base de datos
+
+```python
+    def post(self, name):
+            if Item.find_by_name(name):
+                return {'message': "An item with name '{}' already exist".format(name)}, 400
+
+            data = Item.parser.parse_args()
+
+            item = {'name': name, 'price': data['price']}
+
+            connection = sqlite3.connect('data.db')
+            cursor = connection.cursor()
+
+            query = "INSERT INTO items VALUES (?, ?)"
+            cursor.execute(query,(item['name'], item['price'],))
+
+            connection.commit()
+            connection.close()
+
+            return item, 201
+```
+
+[Video: Escribir un item en la base de datos](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5965494?start=0)
