@@ -1,5 +1,5 @@
 {
-	"id": "342b1ab9-4e16-47af-9386-bcd0949daa2f",
+	"id": "c404b48c-c41f-4d10-92bd-98592dc3236a",
 	"name": "My FLASK REST API Collection",
 	"description": "",
 	"auth": null,
@@ -7,69 +7,156 @@
 	"variables": [],
 	"order": [],
 	"folders_order": [
-		"512d12df-6018-4a30-82ce-1cf40480cd97",
-		"2a375089-fdc0-45cf-9db4-e23b746798fa",
-		"2737c301-315b-4bfb-8c59-d40969a14b06"
+		"7346f18b-ac13-47f3-8b82-bf2663ee3615",
+		"57addf8e-674a-4f69-866b-c008537ccc8d",
+		"ce6b3c4d-d822-42b5-9aef-f796d413a1b8",
+		"68b51bd1-05da-4c19-8922-8af58b546c27"
 	],
 	"folders": [
 		{
-			"id": "512d12df-6018-4a30-82ce-1cf40480cd97",
+			"id": "7346f18b-ac13-47f3-8b82-bf2663ee3615",
 			"name": "Section 3",
 			"description": "",
 			"auth": null,
 			"events": null,
-			"collection": "342b1ab9-4e16-47af-9386-bcd0949daa2f",
+			"collection": "c404b48c-c41f-4d10-92bd-98592dc3236a",
 			"folder": null,
 			"order": [
-				"44c873df-f0a2-445e-8a4b-e498a251c21b",
-				"7f1ac03c-78b8-4189-ac01-509e6b51c66b",
-				"12ac8c15-a310-41f8-b57c-36de0d421f62",
-				"f38c7aec-6310-4a18-9220-1f2f6fdaffc7",
-				"94437b4a-87a3-4a72-acef-054cce686c65"
+				"f6a6e8e8-2103-4a48-b311-4fa52c302812",
+				"1a8614e6-bd08-4c4a-9124-beac0e33a0cb",
+				"0eccf35e-309d-48aa-b050-aac0eb5ab586",
+				"c9941fae-b928-40d0-b8d5-1d4b34665a54",
+				"f34c271a-da41-4ca0-b036-dd5d3334c010"
 			],
 			"folders_order": []
 		},
 		{
-			"id": "2a375089-fdc0-45cf-9db4-e23b746798fa",
+			"id": "57addf8e-674a-4f69-866b-c008537ccc8d",
 			"name": "Section 4",
 			"description": "",
 			"auth": null,
 			"events": null,
-			"collection": "342b1ab9-4e16-47af-9386-bcd0949daa2f",
+			"collection": "c404b48c-c41f-4d10-92bd-98592dc3236a",
 			"folder": null,
 			"order": [
-				"c453c99c-3f76-4837-b70f-a6e0a0e74815",
-				"e43258c6-9792-495d-9852-465e4fa3586a",
-				"5e5e0bb9-0ff5-4789-9642-b4b3f266a3ed",
-				"88edcbb7-f118-4f72-9a85-8de04a00e76b",
-				"850a121a-ebe3-4c65-90e0-02c89d366453",
-				"81f3736b-baa3-4e8d-ab61-52591c1cd1ff"
+				"f444dcef-b429-4674-8c63-649f02f6b8ca",
+				"ac840879-c4da-48c6-a535-e698508840a9",
+				"a988dfa1-636d-4c3a-a82b-dfe99fd6a7ea",
+				"d2bf4def-d98a-4030-95e0-6ee03c7fd949",
+				"ccefd05e-01fe-4b16-b65a-ca7e5007a5e3",
+				"15711b19-8e06-43ee-80f8-b8e5d4d28910"
 			],
 			"folders_order": []
 		},
 		{
-			"id": "2737c301-315b-4bfb-8c59-d40969a14b06",
+			"id": "ce6b3c4d-d822-42b5-9aef-f796d413a1b8",
 			"name": "Section 5",
 			"description": "",
 			"auth": null,
 			"events": null,
-			"collection": "342b1ab9-4e16-47af-9386-bcd0949daa2f",
+			"collection": "c404b48c-c41f-4d10-92bd-98592dc3236a",
 			"folder": null,
 			"order": [
-				"ca66a42d-a6d9-4d21-9f28-8a111597d3b1",
-				"ff5bc42f-1420-4ecc-8a72-b95d4c925b43",
-				"1a90869b-dad4-4279-be60-2eb6a9f44bd0",
-				"9386710f-45bf-4ced-9fea-91e558f5cf7f",
-				"449ec945-a0f3-4f7a-a6ac-a4bc3e8cf006",
-				"80ed1b08-da84-42eb-8e2e-beb0f472731d",
-				"5da65b5e-942b-4016-939b-9ba1497568af"
+				"548632dc-75b4-492e-8006-6b88e7b2e79a",
+				"0df1c53c-107d-4a58-b0d6-ff0c5b5dc52b",
+				"3602c005-8276-4565-aca2-da64873137f5",
+				"0804e2ff-7d03-4d6e-bab5-939be635a970",
+				"6cdd5c81-cf9e-4141-8557-defd11535142",
+				"6e28487e-bb9a-4ad1-9825-63b4100c1746",
+				"f1fe2ea2-5a35-403d-b01a-e51fac420473"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "68b51bd1-05da-4c19-8922-8af58b546c27",
+			"name": "Section 6",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "c404b48c-c41f-4d10-92bd-98592dc3236a",
+			"folder": null,
+			"order": [
+				"3762a829-5bd0-462a-b697-8809e0f891aa",
+				"5edd9a94-2416-4c77-9078-8d357f3f3e93",
+				"85ca591d-3d72-4162-b393-b7c87f036d68",
+				"786f72fd-54a2-4bc7-b49b-36c923512926",
+				"0a77c5ee-01f4-429c-b6cb-ec4fb52e89ff",
+				"4a511101-32c9-4be8-9ab6-00af9fdc63a3",
+				"32ab7e98-fa64-4f94-b1e6-1966d2ed204b"
 			],
 			"folders_order": []
 		}
 	],
 	"requests": [
 		{
-			"id": "12ac8c15-a310-41f8-b57c-36de0d421f62",
+			"id": "0804e2ff-7d03-4d6e-bab5-939be635a970",
+			"name": "/item/<string:name>",
+			"url": "http://127.0.0.1:5000/item/<string>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "ce6b3c4d-d822-42b5-9aef-f796d413a1b8",
+			"rawModeData": "{\n\t\"price\": 15.99\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0a77c5ee-01f4-429c-b6cb-ec4fb52e89ff",
+			"name": "/item/<string:name>",
+			"url": "{{url}}/item/<string>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "68b51bd1-05da-4c19-8922-8af58b546c27",
+			"rawModeData": "{\n\t\"price\": 15.99\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0df1c53c-107d-4a58-b0d6-ff0c5b5dc52b",
+			"name": "/item/<string:name>",
+			"url": "http://127.0.0.1:5000/item/<name>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "ce6b3c4d-d822-42b5-9aef-f796d413a1b8",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "0eccf35e-309d-48aa-b050-aac0eb5ab586",
 			"name": "/stores/<string:name>",
 			"url": "http://127.0.0.1:5000/store/My Wonderful Store",
 			"description": "",
@@ -81,12 +168,87 @@
 			"queryParams": [],
 			"auth": null,
 			"events": [],
-			"folder": "512d12df-6018-4a30-82ce-1cf40480cd97",
+			"folder": "7346f18b-ac13-47f3-8b82-bf2663ee3615",
 			"headers": "",
 			"pathVariables": {}
 		},
 		{
-			"id": "1a90869b-dad4-4279-be60-2eb6a9f44bd0",
+			"id": "15711b19-8e06-43ee-80f8-b8e5d4d28910",
+			"name": "/auth",
+			"url": "http://127.0.0.1:5000/auth",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "57addf8e-674a-4f69-866b-c008537ccc8d",
+			"rawModeData": "{\n\t\"username\": \"bob\",\n\t\"password\": \"asdf\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1a8614e6-bd08-4c4a-9124-beac0e33a0cb",
+			"name": "/stores",
+			"url": "http://127.0.0.1:5000/store",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "7346f18b-ac13-47f3-8b82-bf2663ee3615",
+			"rawModeData": "{\n\t\"name\":\"Another Store\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "32ab7e98-fa64-4f94-b1e6-1966d2ed204b",
+			"name": "/register",
+			"url": "{{url}}/register",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "68b51bd1-05da-4c19-8922-8af58b546c27",
+			"rawModeData": "{\n\t\"username\": \"bob\",\n\t\"password\": \"asdf\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3602c005-8276-4565-aca2-da64873137f5",
 			"name": "/items",
 			"url": "http://127.0.0.1:5000/items",
 			"description": "This end point retrieve an unique item which matches with the name",
@@ -98,12 +260,118 @@
 			"queryParams": [],
 			"auth": null,
 			"events": [],
-			"folder": "2737c301-315b-4bfb-8c59-d40969a14b06",
+			"folder": "ce6b3c4d-d822-42b5-9aef-f796d413a1b8",
 			"headers": "",
 			"pathVariables": {}
 		},
 		{
-			"id": "449ec945-a0f3-4f7a-a6ac-a4bc3e8cf006",
+			"id": "3762a829-5bd0-462a-b697-8809e0f891aa",
+			"name": "/item/<string:name>",
+			"url": "{{url}}/item/<name>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT {{jwt_token}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "68b51bd1-05da-4c19-8922-8af58b546c27",
+			"headers": "Authorization: JWT {{jwt_token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "4a511101-32c9-4be8-9ab6-00af9fdc63a3",
+			"name": "/auth",
+			"url": "{{url}}/auth",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f2eecca8-8e38-4662-811c-9839bdfc09da",
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"Access token not empty\"] = jsonData.access_token !== undefined;",
+							"",
+							"pm.environment.set(\"jwt_token\", jsonData.access_token);",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"folder": "68b51bd1-05da-4c19-8922-8af58b546c27",
+			"rawModeData": "{\n\t\"username\": \"bob\",\n\t\"password\": \"asdf\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "548632dc-75b4-492e-8006-6b88e7b2e79a",
+			"name": "/item/<string:name>",
+			"url": "http://127.0.0.1:5000/item/<name>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjA0MzM5MDEsImlhdCI6MTUyMDQzMzYwMSwibmJmIjoxNTIwNDMzNjAxLCJpZGVudGl0eSI6MX0.HkIVOHLiVkVq4N_MNyF_zb3WSikAi6S67SwBJysS6ec",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "ce6b3c4d-d822-42b5-9aef-f796d413a1b8",
+			"headers": "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjA0MzM5MDEsImlhdCI6MTUyMDQzMzYwMSwibmJmIjoxNTIwNDMzNjAxLCJpZGVudGl0eSI6MX0.HkIVOHLiVkVq4N_MNyF_zb3WSikAi6S67SwBJysS6ec\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5edd9a94-2416-4c77-9078-8d357f3f3e93",
+			"name": "/item/<string:name>",
+			"url": "{{url}}/item/<name>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "68b51bd1-05da-4c19-8922-8af58b546c27",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "6cdd5c81-cf9e-4141-8557-defd11535142",
 			"name": "/item/<string:name>",
 			"url": "http://127.0.0.1:5000/item/<string>",
 			"description": "This end point retrieve an unique item which matches with the name",
@@ -122,15 +390,116 @@
 			"queryParams": [],
 			"auth": null,
 			"events": [],
-			"folder": "2737c301-315b-4bfb-8c59-d40969a14b06",
+			"folder": "ce6b3c4d-d822-42b5-9aef-f796d413a1b8",
 			"rawModeData": "{\n\t\"price\": 15.99\n}",
 			"headers": "Content-Type: application/json\n",
 			"pathVariables": {}
 		},
 		{
-			"id": "44c873df-f0a2-445e-8a4b-e498a251c21b",
-			"name": "/stores",
-			"url": "http://127.0.0.1:5000/store",
+			"id": "6e28487e-bb9a-4ad1-9825-63b4100c1746",
+			"name": "/auth",
+			"url": "http://127.0.0.1:5000/auth",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "ce6b3c4d-d822-42b5-9aef-f796d413a1b8",
+			"rawModeData": "{\n\t\"username\": \"bob\",\n\t\"password\": \"asdf\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "786f72fd-54a2-4bc7-b49b-36c923512926",
+			"name": "/item/<string:name>",
+			"url": "{{url}}/item/<string>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "68b51bd1-05da-4c19-8922-8af58b546c27",
+			"rawModeData": "{\n\t\"price\": 15.99\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "85ca591d-3d72-4162-b393-b7c87f036d68",
+			"name": "/items",
+			"url": "{{url}}/items",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "68b51bd1-05da-4c19-8922-8af58b546c27",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "a988dfa1-636d-4c3a-a82b-dfe99fd6a7ea",
+			"name": "/items",
+			"url": "http://127.0.0.1:5000/items",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "57addf8e-674a-4f69-866b-c008537ccc8d",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "ac840879-c4da-48c6-a535-e698508840a9",
+			"name": "/item/<string:name>",
+			"url": "http://127.0.0.1:5000/item/<name>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "57addf8e-674a-4f69-866b-c008537ccc8d",
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "c9941fae-b928-40d0-b8d5-1d4b34665a54",
+			"name": "/stores/<string:name>/item",
+			"url": "http://127.0.0.1:5000/store/My Wonderful Store/item",
 			"description": "",
 			"data": null,
 			"dataMode": "params",
@@ -140,12 +509,62 @@
 			"queryParams": [],
 			"auth": null,
 			"events": [],
-			"folder": "512d12df-6018-4a30-82ce-1cf40480cd97",
+			"folder": "7346f18b-ac13-47f3-8b82-bf2663ee3615",
 			"headers": "",
 			"pathVariables": {}
 		},
 		{
-			"id": "5da65b5e-942b-4016-939b-9ba1497568af",
+			"id": "ccefd05e-01fe-4b16-b65a-ca7e5007a5e3",
+			"name": "/item/<string:name>",
+			"url": "http://127.0.0.1:5000/item/<string>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "57addf8e-674a-4f69-866b-c008537ccc8d",
+			"rawModeData": "{\n\t\"price\": 15.99\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d2bf4def-d98a-4030-95e0-6ee03c7fd949",
+			"name": "/item/<string:name>",
+			"url": "http://127.0.0.1:5000/item/<string>",
+			"description": "This end point retrieve an unique item which matches with the name",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": "57addf8e-674a-4f69-866b-c008537ccc8d",
+			"rawModeData": "{\n\t\"price\": 15.99\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f1fe2ea2-5a35-403d-b01a-e51fac420473",
 			"name": "/register",
 			"url": "http://127.0.0.1:5000/register",
 			"description": "This end point retrieve an unique item which matches with the name",
@@ -164,180 +583,13 @@
 			"queryParams": [],
 			"auth": null,
 			"events": [],
-			"folder": "2737c301-315b-4bfb-8c59-d40969a14b06",
+			"folder": "ce6b3c4d-d822-42b5-9aef-f796d413a1b8",
 			"rawModeData": "{\n\t\"username\": \"bob\",\n\t\"password\": \"asdf\"\n}",
 			"headers": "Content-Type: application/json\n",
 			"pathVariables": {}
 		},
 		{
-			"id": "5e5e0bb9-0ff5-4789-9642-b4b3f266a3ed",
-			"name": "/items",
-			"url": "http://127.0.0.1:5000/items",
-			"description": "This end point retrieve an unique item which matches with the name",
-			"data": null,
-			"dataMode": "params",
-			"headerData": [],
-			"method": "GET",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": [],
-			"folder": "2a375089-fdc0-45cf-9db4-e23b746798fa",
-			"headers": "",
-			"pathVariables": {}
-		},
-		{
-			"id": "7f1ac03c-78b8-4189-ac01-509e6b51c66b",
-			"name": "/stores",
-			"url": "http://127.0.0.1:5000/store",
-			"description": "",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"method": "POST",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": [],
-			"folder": "512d12df-6018-4a30-82ce-1cf40480cd97",
-			"rawModeData": "{\n\t\"name\":\"Another Store\"\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "80ed1b08-da84-42eb-8e2e-beb0f472731d",
-			"name": "/auth",
-			"url": "http://127.0.0.1:5000/auth",
-			"description": "This end point retrieve an unique item which matches with the name",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"method": "POST",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": [],
-			"folder": "2737c301-315b-4bfb-8c59-d40969a14b06",
-			"rawModeData": "{\n\t\"username\": \"bob\",\n\t\"password\": \"asdf\"\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "81f3736b-baa3-4e8d-ab61-52591c1cd1ff",
-			"name": "/auth",
-			"url": "http://127.0.0.1:5000/auth",
-			"description": "This end point retrieve an unique item which matches with the name",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"method": "POST",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": [],
-			"folder": "2a375089-fdc0-45cf-9db4-e23b746798fa",
-			"rawModeData": "{\n\t\"username\": \"bob\",\n\t\"password\": \"asdf\"\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "850a121a-ebe3-4c65-90e0-02c89d366453",
-			"name": "/item/<string:name>",
-			"url": "http://127.0.0.1:5000/item/<string>",
-			"description": "This end point retrieve an unique item which matches with the name",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"method": "PUT",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": [],
-			"folder": "2a375089-fdc0-45cf-9db4-e23b746798fa",
-			"rawModeData": "{\n\t\"price\": 15.99\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "88edcbb7-f118-4f72-9a85-8de04a00e76b",
-			"name": "/item/<string:name>",
-			"url": "http://127.0.0.1:5000/item/<string>",
-			"description": "This end point retrieve an unique item which matches with the name",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"method": "POST",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": [],
-			"folder": "2a375089-fdc0-45cf-9db4-e23b746798fa",
-			"rawModeData": "{\n\t\"price\": 15.99\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "9386710f-45bf-4ced-9fea-91e558f5cf7f",
-			"name": "/item/<string:name>",
-			"url": "http://127.0.0.1:5000/item/<string>",
-			"description": "This end point retrieve an unique item which matches with the name",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"method": "POST",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": [],
-			"folder": "2737c301-315b-4bfb-8c59-d40969a14b06",
-			"rawModeData": "{\n\t\"price\": 15.99\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "94437b4a-87a3-4a72-acef-054cce686c65",
+			"id": "f34c271a-da41-4ca0-b036-dd5d3334c010",
 			"name": "/stores/<string:name>/item",
 			"url": "http://127.0.0.1:5000/store/My Wonderful Store/item",
 			"description": "",
@@ -356,13 +608,13 @@
 			"queryParams": [],
 			"auth": null,
 			"events": [],
-			"folder": "512d12df-6018-4a30-82ce-1cf40480cd97",
+			"folder": "7346f18b-ac13-47f3-8b82-bf2663ee3615",
 			"rawModeData": "{\n\t\"name\": \"Another item\",\n\t\"price\": 14.56\n}",
 			"headers": "Content-Type: application/json\n",
 			"pathVariables": {}
 		},
 		{
-			"id": "c453c99c-3f76-4837-b70f-a6e0a0e74815",
+			"id": "f444dcef-b429-4674-8c63-649f02f6b8ca",
 			"name": "/item/<string:name>",
 			"url": "http://127.0.0.1:5000/item/<name>",
 			"description": "This end point retrieve an unique item which matches with the name",
@@ -381,55 +633,14 @@
 			"queryParams": [],
 			"auth": null,
 			"events": [],
-			"folder": "2a375089-fdc0-45cf-9db4-e23b746798fa",
+			"folder": "57addf8e-674a-4f69-866b-c008537ccc8d",
 			"headers": "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjA0MzM5MDEsImlhdCI6MTUyMDQzMzYwMSwibmJmIjoxNTIwNDMzNjAxLCJpZGVudGl0eSI6MX0.HkIVOHLiVkVq4N_MNyF_zb3WSikAi6S67SwBJysS6ec\n",
 			"pathVariables": {}
 		},
 		{
-			"id": "ca66a42d-a6d9-4d21-9f28-8a111597d3b1",
-			"name": "/item/<string:name>",
-			"url": "http://127.0.0.1:5000/item/<name>",
-			"description": "This end point retrieve an unique item which matches with the name",
-			"data": null,
-			"dataMode": "params",
-			"headerData": [
-				{
-					"key": "Authorization",
-					"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjA0MzM5MDEsImlhdCI6MTUyMDQzMzYwMSwibmJmIjoxNTIwNDMzNjAxLCJpZGVudGl0eSI6MX0.HkIVOHLiVkVq4N_MNyF_zb3WSikAi6S67SwBJysS6ec",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"method": "GET",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": [],
-			"folder": "2737c301-315b-4bfb-8c59-d40969a14b06",
-			"headers": "Authorization: JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MjA0MzM5MDEsImlhdCI6MTUyMDQzMzYwMSwibmJmIjoxNTIwNDMzNjAxLCJpZGVudGl0eSI6MX0.HkIVOHLiVkVq4N_MNyF_zb3WSikAi6S67SwBJysS6ec\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "e43258c6-9792-495d-9852-465e4fa3586a",
-			"name": "/item/<string:name>",
-			"url": "http://127.0.0.1:5000/item/<name>",
-			"description": "This end point retrieve an unique item which matches with the name",
-			"data": null,
-			"dataMode": "params",
-			"headerData": [],
-			"method": "DELETE",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": [],
-			"folder": "2a375089-fdc0-45cf-9db4-e23b746798fa",
-			"headers": "",
-			"pathVariables": {}
-		},
-		{
-			"id": "f38c7aec-6310-4a18-9220-1f2f6fdaffc7",
-			"name": "/stores/<string:name>/item",
-			"url": "http://127.0.0.1:5000/store/My Wonderful Store/item",
+			"id": "f6a6e8e8-2103-4a48-b311-4fa52c302812",
+			"name": "/stores",
+			"url": "http://127.0.0.1:5000/store",
 			"description": "",
 			"data": null,
 			"dataMode": "params",
@@ -439,24 +650,7 @@
 			"queryParams": [],
 			"auth": null,
 			"events": [],
-			"folder": "512d12df-6018-4a30-82ce-1cf40480cd97",
-			"headers": "",
-			"pathVariables": {}
-		},
-		{
-			"id": "ff5bc42f-1420-4ecc-8a72-b95d4c925b43",
-			"name": "/item/<string:name>",
-			"url": "http://127.0.0.1:5000/item/<name>",
-			"description": "This end point retrieve an unique item which matches with the name",
-			"data": null,
-			"dataMode": "params",
-			"headerData": [],
-			"method": "DELETE",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": [],
-			"folder": "2737c301-315b-4bfb-8c59-d40969a14b06",
+			"folder": "7346f18b-ac13-47f3-8b82-bf2663ee3615",
 			"headers": "",
 			"pathVariables": {}
 		}
