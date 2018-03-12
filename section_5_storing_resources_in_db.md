@@ -11,6 +11,7 @@
 * [Refactor insert of items](#refactor-insert-of-items)
 * [Implementar el metodo put para modificar items](#implementar-el-metodo-put-para-modificar-items)
 * [Implementar el metodo GET obtner todos los items](#implementar-el-metodo-get-obtner-todos-los-items)
+* [Configuraciones avanzadas de Flask-JWT](#configuraciones-avanzadas-de-flask-jwt)
 
 ## Comandos basicos de SQL
 
@@ -334,3 +335,14 @@ class ItemList(Resource):
 ```
 
 [Video: Obterner todos los items](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5989696?start=0)
+
+
+## Configuraciones avanzadas de Flask-JWT
+
+* Changing the authentication endpoint (by default, ``/auth``);
+* Changing the token expiration time (by default, ``5 minutes``);
+* Changing the authentication key name (by default, ``username``);
+* Changing the authentication response body (by default, only contains ``access_token``); and
+* Changing the error handlers.
+
+Ver [el blog](http://tecladocode.com/blog/learn-python-advanced-configuration-of-flask-jwt/) (for online viewing) o el archivo ``flask-jwt-guide.pdf`` que se encuentr en la carpeta ``documentacion``.

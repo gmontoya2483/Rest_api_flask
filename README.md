@@ -61,4 +61,5 @@
 
 ## Referencias
 
-[Curso Uadamy - REST APIs with Flask and Python](https://www.udemy.com/rest-api-flask-and-python/learn/v4/content)
+[Curso Uadamy - REST APIs with Flask and Python](https://www.udemy.com/rest-api-flask-and-python/learn/v4/content)  
+[Bolg Teclado - josé salvatierra](http://tecladocode.com/blog/)
