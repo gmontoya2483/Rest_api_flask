@@ -269,3 +269,9 @@ class ItemList(Resource):
 
 [Video: Creando los modelos](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/6020492?start=0)
 
+
+## Configurando SQLAchemy
+
+
+
+[Video: configurando SQLAlchemy](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/6020504?start=0)
