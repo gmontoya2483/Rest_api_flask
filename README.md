@@ -48,6 +48,8 @@
 * Signing up and escribir usuarios en la base de datos
 * Obtener un item desde la base de datos
 * Escribir un item en la base de datos
+* Borrar un item de la base de datos
+* Refactor insert of items
 
 ## TODO:
 

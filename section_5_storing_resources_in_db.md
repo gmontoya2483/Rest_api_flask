@@ -8,6 +8,7 @@
 * [Obtener un item desde la base de datos](#obtener-un-item-desde-la-base-de-datos)
 * [Escribir un item en la base de datos](#escribir-un-item-en-la-base-de-datos)
 * [Borrar un item de la base de datos](#borrar-un-item-de-la-base-de-datos)
+* [Refactor insert of items](#refactor-insert-of-items)
 
 ## Comandos basicos de SQL
 
@@ -227,3 +228,46 @@
 ```
 
 [Video: Borrar un item de la base de datos](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5988604?start=0)
+
+
+## Refactor insert of items
+
+```python
+    @classmethod
+    def insert_item(cls, item):
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
+
+        query = "INSERT INTO items VALUES (?, ?)"
+        cursor.execute(query,(item['name'], item['price'],))
+
+        connection.commit()
+        connection.close()
+
+```
+
+```python
+    def post(self, name):
+        if Item.find_by_name(name):
+            return {'message': "An item with name '{}' already exist".format(name)}, 400
+
+        data = Item.parser.parse_args()
+
+        item = {'name': name, 'price': data['price']}
+        try:
+            Item.insert_item(item)
+        except:
+            return {'message': "An error occurred inserting the item."},500
+
+        return item, 201
+```
+
+**html codes:**  
+> 200 OK  
+> 201 CREATED  
+> 202 ACCEPTED  
+> 404 NOT FOUND  
+> 400 BAD REQUEST  
+> 500 INTERNAL SERVER ERROR  
+
+[Video: refactor insert of items](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5988608?start=0)

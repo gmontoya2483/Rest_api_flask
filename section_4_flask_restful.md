@@ -171,7 +171,7 @@ Importar las clases ```Resource``` y ```Api``` del modulo ```flask_restful```. A
 > 200 OK  
 > 201 CREATED  
 > 202 ACCEPTED  
-> 404 NOT FOUND 
+> 404 NOT FOUND  
 > 400 BAD REQUEST  
 
 [Video: Mejora de codigo y control de errores](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5960162?start=0)
