@@ -7,4 +7,4 @@ venv/
 __pycache__/
 
 # database
-data.db
+# data.db
