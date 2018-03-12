@@ -32,3 +32,10 @@ Werkzeug==0.14.1
 
 (venv) C:\Users\montoya\Desktop\CursoRestAPIFlask\section_06_Flask_SQLAlchemy>
 ```
+
+## organizar el proyecto en packages
+
+* Crear la carpeta del paquete: ``models`` y ``resources``
+* Dentro de cada carpeta que va a ser definida como paquete se debe crear el archivo ``__init__.py``
+
+ 
