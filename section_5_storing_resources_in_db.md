@@ -7,6 +7,7 @@
 * [Signing up and escribir usuarios en la base de datos](#signing-up-and-escribir-usuarios-en-la-base-de-datos)
 * [Obtener un item desde la base de datos](#obtener-un-item-desde-la-base-de-datos)
 * [Escribir un item en la base de datos](#escribir-un-item-en-la-base-de-datos)
+* [Borrar un item de la base de datos](#borrar-un-item-de-la-base-de-datos)
 
 ## Comandos basicos de SQL
 
@@ -205,3 +206,24 @@
 ```
 
 [Video: Escribir un item en la base de datos](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5965494?start=0)
+
+## Borrar un item de la base de datos
+
+```python
+   def delete(self, name):
+        if Item.find_by_name(name) is None:
+            return {'message': "An item with name '{}' does not exist".format(name)}, 400
+
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
+
+        query = "DELETE FROM items WHERE name=?"
+        cursor.execute(query,(name,))
+
+        connection.commit()
+        connection.close()
+
+        return {'message': 'Item deleted'}
+```
+
+[Video: Borrar un item de la base de datos](https://www.udemy.com/rest-api-flask-and-python/learn/v4/t/lecture/5988604?start=0)

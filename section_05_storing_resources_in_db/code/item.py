@@ -58,8 +58,18 @@ class Item(Resource):
 
 
     def delete(self, name):
-        global items
-        items = list(filter(lambda item: item['name'] != name, items))
+        if Item.find_by_name(name) is None:
+            return {'message': "An item with name '{}' does not exist".format(name)}, 400
+
+        connection = sqlite3.connect('data.db')
+        cursor = connection.cursor()
+
+        query = "DELETE FROM items WHERE name=?"
+        cursor.execute(query,(name,))
+
+        connection.commit()
+        connection.close()
+        
         return {'message': 'Item deleted'}
 
 
